@@ -213,7 +213,22 @@ a.select {
 .link-top:focus .mail {
   fill: var(--accent-cl);
 }
+nav a::after{
+  display: block;
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 0;
+  background-color:var(--accent-cl);
+  top: 76px;
+  left:auto;
+  border-radius:2px;
+}
 
+nav a:hover::after,
+nav a :focus::after{
+  width: 48px;
+}
 .menu-nav {
   margin-right: auto;
 }
@@ -341,6 +356,10 @@ a.select {
 
 .menu-features:not(:last-child) {
   margin-right: 30px;
+}
+
+.menu-features{
+  display:block;
 }
 
 .section {
@@ -485,6 +504,7 @@ a.select {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-cl);
+  margin-top: 10px;
 }
 
 .lable-team {
@@ -700,6 +720,12 @@ li .social:focus {
   height: 100%;
   background-color:rgba(0, 0, 0, 0.2);
   /* visibility: hidden; */
+}
+.is-hidden{
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
 }
 
 .modal{
