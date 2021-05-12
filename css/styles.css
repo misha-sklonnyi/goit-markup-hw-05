@@ -213,21 +213,23 @@ a.select {
 .link-top:focus .mail {
   fill: var(--accent-cl);
 }
+
 nav a::after{
   display: block;
   position: absolute;
   content: "";
   height: 4px;
-  width: 0;
-  background-color:var(--accent-cl);
-  top: 76px;
+  width:0;
+  top: 20px;px;
   left:auto;
   border-radius:2px;
 }
 
 nav a:hover::after,
 nav a :focus::after{
-  width: 48px;
+  position: relative;
+  background-color:var(--accent-cl);
+  width: 100%;
 }
 .menu-nav {
   margin-right: auto;
