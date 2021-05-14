@@ -796,7 +796,9 @@ li .social:focus {
 }
 
 .bt-footer{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0; 
   text-decoration: none;
@@ -817,13 +819,6 @@ li .social:focus {
   line-height: 16px;
   text-transform: uppercase;
   color:var(--alt-title-cl);
-}
-
-.b{
- display: flex;
- text-decoration: none;
- justify-content: center;
- align-items: center;
 }
 
 .c{
