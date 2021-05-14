@@ -36,7 +36,7 @@
                     <li class="menu-item">
                             <a class="accent-nav" href="tel:+380961111111">
                                 <svg class="icon-header" width="12" height="16">
-                                    <use href="./images/icon/symbol-defs.svg#Vector"></use>
+                                    <use href="./images/icon/symbol-defs.svg#tel1"></use>
                                 </svg>
                                 +38 096 111 11 11
                             </a>
@@ -313,7 +313,7 @@
                     </li>
                     <li class="client">
                          <a class="bt-client" href="logo4" >
-                            <svg class="client-svg" width="106" height="60">
+                            <svg class="client-svg" width="80" height="42">
                                 <use href="./images/icon/symbol-defs.svg#logo4"></use>
                             </svg>
                         </a>
@@ -328,7 +328,7 @@
                     </li>
                     <li class="client">
                          <a class="bt-client" href="log6" >
-                            <svg class="client-svg" width="106" height="60">
+                            <svg class="client-svg" width="89" height="46">
                                 <use href="./images/icon/symbol-defs.svg#logo6"></use>
                             </svg>
                         </a>
@@ -353,7 +353,7 @@
                 </address>
             </section>
             <section class="section-footer soc-icon">
-                    <h3 class="social">Присоединяйтесь</h3>
+                    <span class="footer-text">Присоединяйтесь</span>
                     <ul class="link-footer">
                         <li class="">
                             <a class="social-footer" href="instagram">
@@ -385,15 +385,53 @@
                         </li>
                     </ul>
             </section>
+            <section class="section-footer">
+                <h3 class="social">Подпишитесь на рассылку</h3>
+                <div>
+                    <form class="footer-activ-social">
+                        <label  class="a">
+                            <input class="footer-email" type="email" name="email" placeholder="E-mail" />
+                        </label>                 
+                        <button class="bt-footer" type="submit">
+                            <div class="b">
+                               <span class="c">Подписаться</span>
+                                <svg width="24" height="24">
+                                    <use href="./images/icon/symbol-defs.svg#telegram"></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+            </section>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <h2>Оставьте свои данные, мы вам перезвоним</h2>
             <button class="modal-svg-bg" data-modal-close>
                 <svg class="modal-svg" width="11" height="11">
                     <use href="./images/icon/symbol-defs.svg#modal-close"></use>
                 </svg>
             </button>
+            <form action="">
+                <label for="name">
+                    Имя
+                     <input type="text" name="name" id="name" placeholder="| ">
+                </label>
+                <label for="phone_number">
+                    Телефон
+                    <input type="tel" name="phone_number" id="phone_number">
+                </label>
+                <label for="email">
+                    Почта
+                    <input type="email" name="eamil" id="email">
+                </label>
+                <label for="commentary">
+                    Комментарий
+                    <textarea name="commentary" rows="5" id="commentary" placeholder="Введите текст"></textarea>
+                </label>
+                <button type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <!-- Ставим перед закрывающим тегом body -->
